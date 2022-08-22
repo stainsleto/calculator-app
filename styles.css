@@ -1,0 +1,78 @@
+*{
+    background-color: hsl(222, 26%, 31%);
+}
+
+.calculator-main{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.cal-text{
+    color:azure;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+/* result box */
+
+#result{
+    background-color: hsl(224, 36%, 15%) ;
+    text-align: right;
+    padding:10px;
+    width:21vw;
+    height:6vh;
+    border-radius: 7px;
+    border: hsl(224, 36%, 15%);
+    margin:10px 10px 10px 0px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+/* buttons */
+
+.exc-buttons{
+    background-color: hsl(224, 36%, 15%) ;
+    padding:10px;
+    border-radius:7px; 
+}
+
+td{
+    background-color: hsl(30, 25%, 89%);
+    padding:8px;
+    width:3.5vw;
+    height:2.5vh;
+    text-align: center;
+    border-radius:10px;
+    column-gap: 40px;
+    border: solid hsl(224, 36%, 15%) 5px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+}
+
+td:hover{
+    cursor:pointer;
+    background-color:rgb(255, 255, 255);
+}
+
+#delete:hover{
+    background-color: hsl(225, 21%, 49%);
+    color: rgb(249, 249, 249);
+}
+
+#reset:hover{
+    background-color: hsl(225, 21%, 49%);
+    color: rgb(249, 249, 249);
+
+}
+
+#equal:hover{
+    background-color:hsl(6, 63%, 55%);
+    color: rgb(249, 249, 249);
+
+}
+
+
+

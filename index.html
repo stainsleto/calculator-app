@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Calculator app</title>
+</head>
+<body>
+<script src="script.js" defer></script>
+
+<!-- calculator starts -->
+
+<div class="calculator-main">
+  <div>
+    <h2 class="cal-text">calc</h2>
+  </div>
+
+<!-- Calculator result box -->
+
+  <div class="result-box">
+    <input type="textbox" id="result" value="0">
+  </div>
+
+<!-- Calculator buttons box -->
+  
+  <div>
+    <table class="exc-buttons">
+      <tr>
+        <td class = "symbol" id="num7">7</td>
+        <td class = "symbol" id="num8">8</td>
+        <td class = "symbol" id="num9">9</td>
+        <td id="delete">DEL</td>
+      </tr>
+
+      <tr>
+        <td class = "symbol" id="num4">4</td>
+        <td class = "symbol" id="num5">5</td>
+        <td class = "symbol" id="num6">6</td>
+        <td class = "symbol" id="addition">+</td>
+      </tr>
+
+      <tr>
+        <td class = "symbol" id="num1">1</td>
+        <td class = "symbol" id="num2">2</td>
+        <td class = "symbol" id="num3">3</td>
+        <td class = "symbol" id="subtraction">-</td>
+      </tr>
+      
+      <tr>
+        <td class = "symbol" id="decimal">.</td>
+        <td class = "symbol" id="num0">0</td>
+        <td class = "symbol" id="division">/</td>
+        <td class = "symbol" id="multiplication">*</td>
+      </tr>
+
+      <tr>
+        <td id="reset" colspan="2">RESET</td>
+        <td id="equal" colspan="2">=</td>
+        
+      </tr>
+    </table>
+  </div>
+
+<!-- End of Buttons -->
+
+</div>
+</body>
+</html>
