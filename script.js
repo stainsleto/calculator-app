@@ -17,7 +17,7 @@ let reset = document.getElementById("reset");
 let symbols = document.getElementsByClassName("symbol");
 
 for (let i=0;i<symbols.lenght;i++){
-    symbols.addEventListener("click",answer);
+    symbols[i].addEventListener("click",answer);
 }
 
 // evaluation for equal sign 
