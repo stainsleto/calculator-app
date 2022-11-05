@@ -1,8 +1,20 @@
 
 *{
-    background-color: hsl(222, 26%, 31%);
+    background-color:var(--primary-bg);
 }
 
+:root{
+    --primary-bg : hsl(222, 26%, 31%);
+    --primary-button :hsl(30, 25%, 89%);
+    --primary-cal-bg:hsl(224, 36%, 15%);
+    --primary-result-box:hsl(224, 36%, 15%);
+    --primary-result-text:rgb(255, 255, 255);
+    
+}
+
+.second-theme{
+    --primary-bg : hsl(0, 0%, 90%);
+}
 
 
 .calculator-main{
@@ -30,47 +42,89 @@
     margin-bottom: -20px;
     margin-top: 100px;   
 }
+.ott{
+    margin-top: -50px;
+    
+}
+
+#number{
+    margin-left: 17px;
+    margin-bottom: 3px;
+    color:azure;
+    font-family: 'League Spartan', sans-serif;
+   
+}
 
 .switch{
-    background-color: aqua;
-    border-radius: 30px;
+    display:flex;
+    justify-content: center;
+    background-color: #252c45;
+    border-radius: 50px;
     padding: 4px;
+   
+    border: 3px solid #252c45;
+    opacity: 1;
 }
+
+.th-button{
+    height: 10px;
+    width: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    appearance: none;
+    background-color:aliceblue;
+}
+
+#one{
+    background-color: #f86c5a;
+}
+
+
+input:hover {
+    cursor: pointer;
+}
+#two{
+    opacity: 0;
+}
+#three{
+    opacity :0;
+}
+
 
 
 /* result box */
 
 #result{
-    background-color: hsl(224, 36%, 15%) ;
+    background-color: var(--primary-result-box) ;
     text-align: right;
     padding:10px;
     width: 280px;
     margin-left: 10px;
     height:6vh;
     border-radius: 7px;
-    border: hsl(224, 36%, 15%);
+    border: var(--primary-result-box);
     margin:10px 10px 10px 0px;
     font-family: 'League Spartan', sans-serif;
     font-size: 25px;
-    color: rgb(255, 255, 255);
+    color: var(--primary-result-text);
 }
 
 /* buttons */
 
 .exc-buttons{
-    background-color: hsl(224, 36%, 15%) ;
+    background-color: var(--primary-cal-bg) ;
     padding:10px;
     border-radius:7px;
     width: 300px; 
 }
 
 td{
-    background-color: hsl(30, 25%, 89%);
+    background-color: var(--primary-button);
     padding:10px;
     text-align: center;
     border-radius:10px;
     column-gap: 40px;
-    border: solid hsl(224, 36%, 15%) 5px;
+    border: solid var(--primary-cal-bg) 5px;
     font-family: 'League Spartan', sans-serif;
     font-size: 30px;
 }
